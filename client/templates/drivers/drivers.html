@@ -1,0 +1,23 @@
+<template name="drivers">
+<div class="box drivers">
+    <h2>Drivers</h2>
+  {{#each drivers}}
+  <fieldset class="driver">
+    <legend class="">{{name}} ({{path}}):<input id="{{_id}}" {{driver_enabled _id}} type="checkbox" class="enable_driver"> </legend>
+    {{> UI.dynamic template=template }}
+  </fieldset>
+  {{/each}}
+</div>
+<div class="box actions">
+    <h2>Commandes :</h2>
+  {{#each actions}}
+  <fieldset class="driver">
+    <legend class="">{{name}} : </legend>
+    {{> UI.dynamic template=template }}
+  </fieldset>
+  {{/each}}
+
+</div>
+
+</template>
+

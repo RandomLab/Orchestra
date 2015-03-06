@@ -1,0 +1,30 @@
+<head>
+	<meta charset="utf-8" />
+</head>
+
+<body>
+  <header>
+    Orcherstra v0.0.1, random(lab)
+    <span>
+    {{> ros_connect_button}}
+    </span>
+  </header>
+  <div class="spacer"></div>
+</body>
+<template name="main">
+<div id="panel" class="panel">
+  <div id="params_slider" class="params_slider"><span class="arrow"><a href="#">&nbsp;></a></span></div>
+  <h1>Paramètres</h1>
+  <div class="box">
+    {{> world_parameters}}
+  </div>
+  <div class="box">
+    {{> osc_parameters}}
+  </div>
+</div>
+<div class="box">
+  {{> pilotage}}
+  <div class="debug"></div>
+</div>
+
+</template>

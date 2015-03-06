@@ -1,0 +1,15 @@
+<template name="driver_hard">
+<label for="cmd_th">Seuil : </label>
+<input type="text" id="cmd_th" value="{{getThValue}}" readonly style="border:0; color:#f6931f; font-weight:bold;">
+{{#with axisState}}
+  <span class='{{x}} axesState'>X</span>
+  <span class='{{y}} axesState'>Y</span>
+  <span class='{{z}} axesState'>Z</span>
+{{/with}}
+<div id="hard_slider_th" class="slider_osc_params"></div>
+<p>Taille du cube : {{getRealSize}}</p>
+<p>Commande envoyée au drone :</p>
+<p id="ros_cmd">{{getHardDroneCMD}}</p>
+
+</template>
+

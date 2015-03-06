@@ -1,0 +1,22 @@
+<template name="driver_visualisation">
+<svg version="1.1" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="220px" height="205px">
+
+  {{#with data}}
+  <circle style="stroke: black; fill: #eee;" cx="55" cy="55" r="50"/>
+  <rect x="50" y="52.5" height="25" width="10" style="stroke:#000; fill: #0086B2" transform="rotate({{pitch}} 55 55 )"></rect>
+  <rect x="5" y="52.5" height="5" width="100" style="stroke:#000; fill: #0086B2" transform="rotate({{pitch}} 55 55 )"></rect>
+  <circle style="stroke: black; fill: #eee;" cx="165" cy="55" r="50"/>
+  <rect x="160" y="52.5" height="25" width="10" style="stroke:#000; fill: #0086B2" transform="rotate({{roll}} 165 55 )"></rect>
+  <rect x="115" y="52.5" height="5" width="100" style="stroke:#000; fill: #0086B2" transform="rotate({{roll}} 165 55 )"></rect>
+  <text x="20" y="120" fill="red">X : {{x}}</text>
+  <text x="20" y="145" fill="green">Y : {{y}}</text>
+  <text x="20" y="165" fill="blue">Z : {{z}}</text>
+  <text x="20" y="182" fill="black">pitch : {{pitch}}</text>
+  <text x="20" y="205" fill="black">roll : {{roll}}</text>
+  {{/with}}
+</svg>
+
+</template>
+

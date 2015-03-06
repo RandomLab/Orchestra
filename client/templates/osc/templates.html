@@ -1,0 +1,22 @@
+<template name="osc_parameters">
+<div class="osc_params">
+  <fieldset>
+    <legend>Paramètres OSC</legend>
+    <p>
+    <label for="osc_port">Port : </label>
+    <input type="text" id="osc_port" value="{{osc_port}}" style="border:1px solid black; color:#f6931f; font-weight:bold;">
+    </p>
+    <p>
+    <label for="osc_range">Range : </label>
+    <input type="text" id="osc_range" value="{{getOscRAnge}}" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    </p>
+    <div id="rangeSlider" class="slider_osc_params"></div>
+    <ul>
+    {{#each osc_paths}}
+    <li>{{path}}, {{data.[1]}}, {{data.[2]}}, {{data.[3]}}</li>
+    {{/each}}
+    </ul>
+  </fieldset>
+</div>
+  
+</template>

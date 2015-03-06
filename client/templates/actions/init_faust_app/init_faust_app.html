@@ -1,0 +1,10 @@
+<template name="init_faust_app">
+    <p>
+    <button id="init_faust_app">init. Faust app</button>
+    {{#with getFaustAppParams}}
+    <input id="faust_app_ip" type="text" placeHolder="IP" value={{ip}} name="ip" size="15"> :
+    <input id="faust_app_port" type="text" placeHolder="port" value={{port}} name="port" size="4">
+    {{/with}}
+    </p>
+
+</template>

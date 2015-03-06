@@ -1,0 +1,44 @@
+<template name="pilotage">
+{{>drivers}}
+<!--
+<div class="pilotage">
+  <fieldset>
+    <legend>Pilotage</legend>
+    <button>Décolage</button>
+    <button>Atterrissage</button>
+    <button>Reset</button>
+    <p>
+    <button id="init_faust_app">init. Faust app</button>
+    {{#with getFaustAppParams}}
+    <input id="faust_app_ip" type="text" placeHolder="IP" value={{ip}} name="ip" size="15"> :
+    <input id="faust_app_port" type="text" placeHolder="port" value={{port}} name="port" size="4">
+    {{/with}}
+    </p>
+    <fieldset class="driver">
+      <legend class="{{active_driver driver='hard'}}">Hard :<input class="active_driver" value="hard" checked type="radio" name="active_driver"> </legend>
+      <label for="cmd_th">Seuil : </label>
+      <input type="text" id="cmd_th" value="{{getThValue}}" readonly style="border:0; color:#f6931f; font-weight:bold;">
+      {{>axisState}}
+      <div id="sliderCmdTh" class="slider_osc_params"></div>
+      <p>Commande envoyée au drone :</p>
+      <p>{{getHardDroneCMD}}</p>
+    </fieldset>
+    <fieldset class="driver">
+      <legend class="{{active_driver driver='soft'}}">Soft :<input class="active_driver" value="soft" type="radio" name="active_driver"> </legend>
+      <label for="cmd_th">Seuil : </label>
+      <input type="text" id="cmd_th" value="{{getThValue}}" readonly style="border:0; color:#f6931f; font-weight:bold;">
+      {{>axisState}}
+    </fieldset>
+    <p>
+    <label for="cmd_th">Valeurs brut : </label><br/>
+    {{#with osc_data}}
+      <span class=''>{{x}}</span>
+      <span class=''>{{y}}</span>
+      <span class=''>{{z}}</span>
+    {{/with}}
+    </p>
+    {{>virtualPhone}}
+  </fieldset>
+</div>
+-->
+</template>

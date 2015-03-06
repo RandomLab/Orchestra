@@ -1,0 +1,159 @@
+/* CSS declarations go here */
+
+.params {
+  width:500px;
+}
+
+.slider_world_params {
+  margin: 10px;
+}
+.osc_params {
+  width:500px;
+}
+.slider_osc_params {
+  margin: 10px;
+}
+.pilotage {
+  width:500px;
+  margin-left:20px;
+}
+
+.not_connected_to_ros {
+  background-color: red;
+}
+
+.connected_to_ros {
+  background-color: green;
+}
+
+.debug {
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height: 70px;
+  background-color:red;
+  line-height:70px;
+  z-index:10000;
+}
+
+header {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:50px;
+  line-height:50px;
+  background-color:black;
+  color:white;
+  font-size:20px;
+}
+
+header > span {
+  position: absolute;
+  right:5px;
+}
+
+.spacer {
+  height:50px;
+
+}
+.axesState {
+  padding:5px;
+  border:1px solid grey;
+  transition:1s;
+}
+.green {
+  background-color:green;
+  border-radius:20px;
+}
+
+.box {
+  background-color:#eee;
+  float:left;
+  //margin-left:10px;
+
+}
+
+.params_slider {
+  float:right;
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+  border-right:1px solid grey;
+  width:25px;
+  height:60px;
+  background-color:black;
+  color:white;
+  line-height:60px;
+  //border-radius:0 10px 10px 0;
+  position:relative;
+  left:30px;
+  z-index:9998;
+}
+.panel {
+  position:absolute;
+  top:50px;
+  left:0;
+  bottom:0;
+  width:500px;
+  transition:0.3s;
+  margin-left:-510px;
+  padding:5px;
+  background-color:black;
+  z-index:9999;
+}
+.panel > h1 {color:white;}
+
+.visible{
+  margin-left:0;
+}
+.visible > div#params_slider {
+  transform: rotate(180deg);
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+  border-right:0px solid grey;
+  width:25px;
+  height:60px;
+  background-color:black;
+  color:white;
+  line-height:60px;
+  //border-radius:10px 0 0 10px;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+a:visited {
+  color:white;
+}
+a:hover {
+  color:white;
+}
+
+.drivers {
+  border: 1px solid black;
+  padding:10px;
+  //width:350px;
+  margin-top:10px;
+  margin-left:20px;
+  float:left;
+}
+.drivers > legend {
+  transition:0.3s;
+  padding:5px;
+}
+.active_driver {
+  background-color: green;
+}
+.actions {
+  border: 1px solid black;
+  padding:10px;
+  width:350px;
+  margin-top:10px;
+  margin-left:20px;
+}
+.actions > legend {
+  transition:0.3s;
+  padding:5px;
+}
